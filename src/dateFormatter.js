@@ -8,8 +8,6 @@ export const format = (dateToFormatTimeMillis, systemDateTimeMillis) => {
     return 'TODAY';
   } else {
     const dateFormat = 'DD/MM/YYYY'
-    const formattedDate = dateFns.format(dateToFormatTimeMillis, dateFormat)
-    return formattedDate
+    return dateFns.format(dateToFormatTimeMillis, dateFormat)
   }  
 };
-
